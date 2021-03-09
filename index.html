@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev.finance$</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body">
+    <header><img src="imagens/logo.svg" alt="Dev Finances"></header>
+    <section class="area-cards container">
+      <div class="cards">
+        <h3>
+        <span>Entradas</span>
+        <img src="imagens/income.svg" alt="Entradas">
+        </h3>
+        <p class="entradas blur">
+
+        </p>
+       
+      </div>
+      <div class="cards">
+        <h3>
+          <span>Saídas</span>
+          <img src="imagens/expense.svg" alt="Saídas">
+        </h3>
+        <p class="saidas blur">
+
+        </p>
+      </div>
+      <div class="cards" id="total">
+        <h3>
+          <span> Total </span>
+          <span>
+          <img src="imagens/total.svg" alt="Total">
+          <button class="olhoBlur">
+            <img  width="40px" src="imagens/olho.png" alt="">
+          </button>
+        
+            </span>
+
+         
+        </h3>
+        <p class="total blur">
+
+        </p>
+      </div>
+      <button data-openModal class="btnModal">+ Nova transação</button>
+    </section>
+    <section data-containerModal class="container-modal">
+      
+      <div data-modal class="modal">
+        <h2>Nova Transação</h2>
+       <input data-descricao  type="text" placeholder="Descrição">
+       <input data-saldo type="number" placeholder="0,00">
+       <small>
+        Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais.
+       </small>
+       <input data-date type="date"> 
+      
+       <button data-btn ="cancelar" class="btn-cancelar">Cancelar</button>
+       <button onclick="enviar()"  class="btn-salvar">Salvar</button>
+      </div>
+    </div>
+   </section>
+   <table class="container">
+     <tr class="header-tr">
+      <th>Descrição</th>  
+      <th>Valor</th>
+      <th>Data</th>
+     </tr>
+   
+   </table>
+   </div>
+    <script src="javascript/script.js"></script>
+  </body>
+
+</html>
